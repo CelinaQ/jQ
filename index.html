@@ -52,9 +52,14 @@
         $('input[value="Run Script"]').click( function(){
           console.log('Caught a "Run Script" click event.');
           $("#output_area").addClass( 'selected');
-          alert("The looping function should go here.");
+          loop_and_display();
         });
         // attach an event listener to the Clear button here
+        $('input[value="Clear"]').click( function(){
+          console.log('Caught a "Run Script" click event.');
+          $("#output_area").addClass( 'selected');
+          alert("The looping function should go here.");
+        });
       }); // end of $(document).ready
       /*
         This function prepares a string variable with HTML and then uses jQuery
@@ -75,25 +80,26 @@
   </head>
   <body>
     <h1>jQuery modification of the DOM example.</h1>
-    <p>Read the code and answer the following questions by editing the definition list and puttng your answers in the &lt;dd&gt; elements.</p>
+    <p>Read the code and answer the following questions by editing the definition list and putting your answers in the &lt;dd&gt; elements.</p>
     <h2>Quiz</h2>
     <dl>
       <dt>What is an 'event listener'?</dt>
-      <dd>(put your answer here)</dd>
+      <dd>An event listener waits for some action, such as a mouseclick, to be performed and then it calls the function.</dd>
       <dt>How do you attach an event listener that responds to a 'click' event to an element using jQuery?</dt>
-      <dd>(put your answer here)</dd>
+      <dd>$('input[value="Run Script"]').click( function()</dd>
       <dt>What is the ID of the place where the output of the loop function should go?</dt>
-      <dd>(put your answer here)</dd>
+      <dd>#output_area</dd>
       <dt>What is the class that changes the style of the output area?</dt>
-      <dd>(put your answer here)</dd>
+      <dd>.selected</dd>
       <dt>What does the selector input[value="Run Script"] do? Enter the URLs of the places you researched with your explanation.</dt>
-      <dd>(put your answer here)</dd>
+      <dd>when the user inputs (does) something, a script is run. This came from my brain.  Because I couldn't find anything online.</dd>
       <dt>What is the URL of the documentation for the jQuery <kbd>.addClass</kbd> method?</dt>
-      <dd>(put your answer here)</dd>
+      <dd><a href="https://api.jquery.com/addclass/">https://api.jquery.com/addclass/</a></dd>
       <dt>What is the URL of the documentation for GitHub Pages? What does creating the <kbd>gh-pages</kbd> branch do on github.com</dt>
-      <dd>(put your answer here)</dd>
+      <dd><a href="https://help.github.com/categories/github-pages-basics/">https://help.github.com/categories/github-pages-basics/</a>
+      <p>Creating the gh-pages branch allows you to publish your content publicly.</p></dd>
       <dt>What is the URL of the documentation for the <kbd>$(document).ready()</kbd> jQuery method?</dt>
-      <dd>(put your answer here)</dd>
+      <dd><a href="http://api.jquery.com/ready/">http://api.jquery.com/ready/</a></dd>
 
     </dl>
 
