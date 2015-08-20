@@ -57,8 +57,8 @@
         // attach an event listener to the Clear button here
         $('input[value="Clear"]').click( function(){
           console.log('Caught a "Run Script" click event.');
-          $("#output_area").addClass( 'selected');
-          alert("The looping function should go here.");
+          $("#output_area").removeClass( 'selected');
+          $("#output_area").html("Click the Run Script button.");
         });
       }); // end of $(document).ready
       /*
